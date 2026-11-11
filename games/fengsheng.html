@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>風聲｜桌遊規則講義</title>
+  <meta name="description" content="三方諜報戰：靠傳遞情報的過程推理誰是隊友，搶先集滿三張己方情報。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-name" href="../index.html">桌遊規則講義</a>
+      <nav class="site-nav"><a href="../index.html">← 所有遊戲</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>風聲</h1>
+    <p class="lead">三方諜報戰：靠傳遞情報的過程推理誰是隊友，搶先集滿三張己方情報。</p>
+    <ul class="facts">
+      <li><span>人數</span><strong>3–9 人</strong></li>
+      <li><span>時間</span><strong>約 30–60 分鐘</strong></li>
+      <li><span>難度</span><strong>3 / 5</strong></li>
+      <li><span>類型</span><strong>隱藏身份、陣營對抗</strong></li>
+    </ul>
+    <ul class="toc">
+      <li><a href="#goal">遊戲目標</a></li>
+      <li><a href="#components">配件</a></li>
+      <li><a href="#setup">開局設置</a></li>
+      <li><a href="#turn">回合流程</a></li>
+      <li><a href="#cards">重要卡牌與規則</a></li>
+      <li><a href="#mistakes">新手常見錯誤</a></li>
+      <li><a href="#cheatsheet">速查表</a></li>
+    </ul>
+
+    <h2 id="goal">遊戲目標</h2>
+    <p>每個人的身份是秘密，只有自己知道。情報有紅、藍、黑三種顏色，收下的情報會攤在自己面前，大家都看得到。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>身份</th><th>怎麼贏</th></tr></thead>
+        <tbody>
+          <tr><td>潛伏戰線（紅）</td><td>任何一位成員面前集滿三張紅色情報，全隊一起贏</td></tr>
+          <tr><td>軍情局（藍）</td><td>任何一位成員面前集滿三張藍色情報，全隊一起贏</td></tr>
+          <tr><td>特工（中立）</td><td>完成自己角色卡上的「機密任務」，自己一個人贏</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <ul>
+        <li>面前收到三張黑色情報（假情報）就死亡。</li>
+        <li>輪到你傳情報卻沒有手牌可傳，就輸掉遊戲。</li>
+      </ul>
+    </div>
+
+    <h2 id="components">配件</h2>
+    <ul>
+      <li>遊戲牌 108 張（標準版）：每張牌同時是「功能牌」和「情報」</li>
+      <li>角色牌：每個角色有技能與機密任務</li>
+      <li>身份牌：潛伏戰線、軍情局、特工</li>
+    </ul>
+
+    <h2 id="setup">開局設置</h2>
+    <ol class="steps">
+      <li>依人數決定三個陣營各有幾人（見下表），準備對應的身份牌。</li>
+      <li>每人拿到兩張角色牌，二選一。潛伏類角色開局蓋著，其餘角色翻開。</li>
+      <li>每人抽一張身份牌，自己看完蓋好。</li>
+      <li>每人抽 3 張遊戲牌當起始手牌。</li>
+    </ol>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>人數</th><th>潛伏（紅）</th><th>軍情（藍）</th><th>特工</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td>1</td><td>1</td><td>1</td></tr>
+          <tr><td>4</td><td>1</td><td>1</td><td>2</td></tr>
+          <tr><td>5</td><td>2</td><td>2</td><td>1</td></tr>
+          <tr><td>6</td><td>2</td><td>2</td><td>2</td></tr>
+          <tr><td>7</td><td>3</td><td>3</td><td>1</td></tr>
+          <tr><td>8</td><td>3</td><td>3</td><td>2</td></tr>
+          <tr><td>9</td><td>3</td><td>3</td><td>3</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>4 人與 6 人也可以不放特工（2 對 2、3 對 3），7 人可以改成 2、2、3。</p>
+
+    <h2 id="turn">回合流程</h2>
+    <ol class="steps">
+      <li><strong>抽牌</strong>：抽 2 張。</li>
+      <li><strong>出牌</strong>：可以使用功能牌，次數不限。</li>
+      <li><strong>傳情報</strong>：必須挑一張手牌當情報傳出，每回合正好一張。</li>
+      <li>情報被某人收下後，換右手邊的下一位玩家。</li>
+    </ol>
+
+    <h3>情報怎麼傳</h3>
+    <p>當情報傳出時，只看牌的顏色和傳遞方式，功能不算數。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>傳遞方式</th><th>怎麼傳</th><th>看得到內容嗎</th></tr></thead>
+        <tbody>
+          <tr><td>密電</td><td>蓋著往右手邊一位一位傳</td><td>看不到</td></tr>
+          <tr><td>文本</td><td>翻開往右手邊一位一位傳</td><td>所有人看得到</td></tr>
+          <tr><td>直達</td><td>蓋著直接交給指定的人，他不收就退回</td><td>看不到</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>情報傳到每個人面前時，他可以選擇收或不收。不收就繼續傳給下一位。情報繞一圈回到傳出者時，傳出者必須收下。</p>
+
+    <h2 id="cards">重要卡牌與規則</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>牌</th><th>什麼時候用</th><th>效果</th></tr></thead>
+        <tbody>
+          <tr><td>試探</td><td>自己的出牌階段</td><td>交給一人，他依真實身份執行牌上的指示</td></tr>
+          <tr><td>鎖定</td><td>自己的回合</td><td>情報傳到被鎖定的人時，他必須收</td></tr>
+          <tr><td>截獲</td><td>別人回合的傳遞時</td><td>直接拿走傳遞中的情報</td></tr>
+          <tr><td>退回</td><td>情報傳到你面前時</td><td>情報改往反方向傳</td></tr>
+          <tr><td>調虎離山</td><td>傳遞時</td><td>指定一人，這次傳遞跳過他</td></tr>
+          <tr><td>破譯</td><td>情報傳到你面前時</td><td>先偷看內容再決定收不收</td></tr>
+          <tr><td>燒毀</td><td>任何可以出牌的時候</td><td>燒掉任一人面前的一張黑色情報</td></tr>
+          <tr><td>識破</td><td>別人用牌時</td><td>那張牌無效；識破也能被識破</td></tr>
+          <tr><td>真偽莫辨</td><td>自己的出牌階段</td><td>翻出與存活人數相同的牌，每人蓋著選一張當情報收下</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="mistakes">新手常見錯誤</h2>
+    <div class="note warn">
+      <ul>
+        <li>忘記每回合「一定要」傳出一張情報，把手牌全部當功能牌用光。</li>
+        <li>以為特工跟某一隊同陣營。特工只管自己的機密任務。</li>
+        <li>被鎖定後還想用退回。被鎖定就一定要收。</li>
+        <li>對文本用破譯。文本本來就是翻開的，不需要破譯。</li>
+        <li>只顧自己收情報。隊友集滿三張也算全隊勝利，把情報送給隊友一樣有效。</li>
+      </ul>
+    </div>
+
+    <h2 id="cheatsheet">速查表</h2>
+    <div class="cheat">
+      <ul>
+        <li><strong>怎麼贏：</strong>紅隊集 3 紅、藍隊集 3 藍、特工完成機密任務。</li>
+        <li><strong>怎麼死：</strong>面前有 3 張黑色情報。</li>
+        <li><strong>我的回合：</strong>抽 2 張 → 用功能牌 → 傳出 1 張情報。</li>
+        <li><strong>情報到我面前：</strong>可破譯、可退回，然後決定收不收。</li>
+        <li><strong>一定要收：</strong>被鎖定，或情報繞回自己。</li>
+        <li><strong>救人：</strong>用燒毀清掉自己或隊友的黑色情報。</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    規則為個人整理的教學筆記，僅供朋友間遊玩參考；完整規則請以官方說明書為準。
+  </footer>
+</body>
+</html>

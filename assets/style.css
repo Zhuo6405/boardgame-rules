@@ -1,0 +1,166 @@
+/* 桌遊規則講義：全站共用樣式。顏色與字級只在這裡定義，頁面不寫行內樣式。 */
+:root {
+  --paper: #f6f1e7;
+  --card: #fffdf8;
+  --ink: #2b2620;
+  --ink-soft: #6b6257;
+  --felt: #1f5b46;
+  --felt-soft: #e3efe9;
+  --accent: #b4532a;
+  --line: #e2d9c8;
+  --radius: 10px;
+  --serif: "Noto Serif TC", "Source Han Serif TC", "Songti TC", "PMingLiU", serif;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.8;
+}
+a { color: var(--felt); }
+a:hover { color: var(--accent); }
+
+.site-header {
+  background: var(--felt);
+  color: #fff;
+}
+.site-header .inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.site-header a { color: #fff; text-decoration: none; }
+.site-name { font-family: var(--serif); font-weight: 700; font-size: 1.1rem; letter-spacing: 0.08em; }
+.site-nav a { font-size: 0.92rem; opacity: 0.9; }
+.site-nav a:hover { opacity: 1; text-decoration: underline; color: #fff; }
+
+main { max-width: 860px; margin: 0 auto; padding: 36px 20px 64px; }
+
+h1, h2, h3 { font-family: var(--serif); line-height: 1.35; }
+h1 { font-size: 2.3rem; margin: 0 0 8px; }
+h2 {
+  font-size: 1.45rem;
+  margin: 52px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--felt);
+}
+h3 { font-size: 1.1rem; margin: 26px 0 8px; }
+.lead { font-size: 1.12rem; color: var(--ink-soft); margin: 0 0 22px; }
+
+/* 遊戲資訊列 */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+.facts li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+}
+.facts span { display: block; font-size: 0.8rem; color: var(--ink-soft); }
+.facts strong { font-size: 1.02rem; }
+
+/* 頁內目錄 */
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.toc a {
+  display: inline-block;
+  padding: 3px 12px;
+  border: 1px solid var(--felt);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.toc a:hover { background: var(--felt); color: #fff; }
+
+/* 表格 */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 9px 12px; border: 1px solid var(--line); }
+th { background: var(--felt-soft); font-weight: 700; white-space: nowrap; }
+
+ol.steps { padding-left: 1.4em; }
+ol.steps li { margin-bottom: 6px; }
+ol.steps li::marker { color: var(--felt); font-weight: 700; }
+
+/* 提示框：常見錯誤用 .note.warn，速查表用 .cheat */
+.note {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--felt);
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  margin: 16px 0;
+}
+.note.warn { border-left-color: var(--accent); }
+.note ul { margin: 0; padding-left: 1.2em; }
+.cheat {
+  background: var(--felt);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 18px 22px;
+}
+.cheat ul { margin: 0; padding-left: 1.2em; }
+.cheat strong { color: #ffe9b8; }
+
+/* 首頁的遊戲卡片 */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+.game-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--felt);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.game-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(43, 38, 32, 0.12); color: var(--ink); }
+.game-card h2 { border: 0; margin: 0 0 6px; padding: 0; font-size: 1.5rem; }
+.game-card p { margin: 0 0 12px; font-size: 0.95rem; color: var(--ink-soft); flex: 1; }
+.game-card .meta { font-size: 0.85rem; color: var(--ink-soft); }
+.game-card .dots { color: var(--accent); letter-spacing: 2px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
+.tags li { font-size: 0.78rem; background: var(--felt-soft); color: var(--felt); border-radius: 999px; padding: 1px 10px; }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 22px 20px 34px;
+}
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.8rem; }
+  main { padding-top: 26px; }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BANG!｜桌遊規則講義</title>
+  <meta name="description" content="西部小鎮槍戰：只有警長公開身份，其他人邊開槍邊猜誰是同夥。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-name" href="../index.html">桌遊規則講義</a>
+      <nav class="site-nav"><a href="../index.html">← 所有遊戲</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>BANG!</h1>
+    <p class="lead">西部小鎮槍戰：只有警長公開身份，其他人邊開槍邊猜誰是同夥。</p>
+    <ul class="facts">
+      <li><span>人數</span><strong>4–7 人</strong></li>
+      <li><span>時間</span><strong>約 20–40 分鐘</strong></li>
+      <li><span>難度</span><strong>2 / 5</strong></li>
+      <li><span>類型</span><strong>隱藏身份、西部槍戰</strong></li>
+    </ul>
+    <ul class="toc">
+      <li><a href="#goal">遊戲目標</a></li>
+      <li><a href="#components">配件</a></li>
+      <li><a href="#setup">開局設置</a></li>
+      <li><a href="#turn">回合流程</a></li>
+      <li><a href="#cards">重要卡牌與規則</a></li>
+      <li><a href="#mistakes">新手常見錯誤</a></li>
+      <li><a href="#cheatsheet">速查表</a></li>
+    </ul>
+
+    <h2 id="goal">遊戲目標</h2>
+    <p>每人有一個秘密身份，只有警長一開始就公開。生命歸零就出局，出局時翻開身份牌。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>身份</th><th>怎麼贏</th></tr></thead>
+        <tbody>
+          <tr><td>警長</td><td>消滅所有歹徒和叛徒</td></tr>
+          <tr><td>副警長</td><td>保護警長，目標與警長相同</td></tr>
+          <tr><td>歹徒</td><td>殺死警長</td></tr>
+          <tr><td>叛徒</td><td>成為最後一個活著的人（最後才殺警長）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="components">配件</h2>
+    <ul>
+      <li>身份牌：警長、副警長、歹徒、叛徒</li>
+      <li>角色牌：每個角色有特殊能力，並標示生命值</li>
+      <li>遊戲牌：棕色邊框是用完就丟的牌，藍色邊框是放在面前持續生效的裝備</li>
+      <li>記錄生命值用的子彈標記</li>
+    </ul>
+
+    <h2 id="setup">開局設置</h2>
+    <ol class="steps">
+      <li>依人數準備身份牌（見下表），洗勻後每人一張。警長翻開，其他人蓋著。</li>
+      <li>每人抽一張角色牌並翻開，生命值依角色牌標示；警長的生命上限多 1。</li>
+      <li>每人抽與自己生命值相同張數的遊戲牌。</li>
+      <li>由警長開始，順時針輪流進行。</li>
+    </ol>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>人數</th><th>警長</th><th>副警長</th><th>歹徒</th><th>叛徒</th></tr></thead>
+        <tbody>
+          <tr><td>4</td><td>1</td><td>0</td><td>2</td><td>1</td></tr>
+          <tr><td>5</td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
+          <tr><td>6</td><td>1</td><td>1</td><td>3</td><td>1</td></tr>
+          <tr><td>7</td><td>1</td><td>2</td><td>3</td><td>1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="turn">回合流程</h2>
+    <ol class="steps">
+      <li><strong>抽牌</strong>：抽 2 張。</li>
+      <li><strong>出牌</strong>：想出幾張都可以，但每回合只能打一張「BANG!」，面前也不能有兩張同名的裝備。</li>
+      <li><strong>棄牌</strong>：手牌張數不能超過目前的生命值，多的要棄掉。</li>
+    </ol>
+
+    <h3>距離與射程</h3>
+    <p>兩人之間的距離，是從座位順時針或逆時針數過去較短的那一邊（出局的人不算）。沒有武器時射程是 1，只打得到左右兩邊的人。裝備武器可以增加射程，一次只能裝一把武器。</p>
+
+    <h3>出局時</h3>
+    <ul>
+      <li>殺死歹徒的人，可以抽 3 張牌當賞金。</li>
+      <li>警長殺死副警長，警長要棄掉所有手牌和面前的牌。</li>
+    </ul>
+
+    <h2 id="cards">重要卡牌與規則</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>牌</th><th>什麼時候用</th><th>效果</th></tr></thead>
+        <tbody>
+          <tr><td>BANG!（開槍）</td><td>自己回合，每回合 1 張</td><td>射程內一人扣 1 點生命，除非他打出閃躲</td></tr>
+          <tr><td>Missed!（閃躲）</td><td>被開槍時</td><td>抵銷一次開槍</td></tr>
+          <tr><td>Beer（啤酒）</td><td>自己回合，或即將失去最後一點生命時</td><td>回復 1 點生命；只剩兩人時無效</td></tr>
+          <tr><td>Panic!（搶劫）</td><td>自己回合</td><td>拿走距離 1 的人的一張牌</td></tr>
+          <tr><td>Cat Balou（凱特巴洛）</td><td>自己回合</td><td>讓任一人棄一張牌，不限距離</td></tr>
+          <tr><td>Gatling（格林機槍）</td><td>自己回合</td><td>對其他所有人各開一槍，不算在每回合一張的限制內</td></tr>
+          <tr><td>Indians!（印地安人）</td><td>自己回合</td><td>其他人各棄一張 BANG!，否則扣 1 點生命</td></tr>
+          <tr><td>Duel（決鬥）</td><td>自己回合</td><td>與一人輪流棄 BANG!，先棄不出的人扣 1 點生命</td></tr>
+          <tr><td>Barrel（酒桶）</td><td>裝備</td><td>被開槍時翻一張牌，紅心就算閃躲</td></tr>
+          <tr><td>Jail（監獄）</td><td>放在別人面前（不能對警長）</td><td>他的回合開始時翻一張牌，不是紅心就跳過這回合</td></tr>
+          <tr><td>Dynamite（炸藥）</td><td>裝備</td><td>回合開始時翻牌，黑桃 2–9 就爆炸扣 3 點；沒爆就傳給左手邊的人</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="mistakes">新手常見錯誤</h2>
+    <div class="note warn">
+      <ul>
+        <li>一回合打兩張 BANG!。除非角色能力或武器允許，每回合只能一張。</li>
+        <li>忘記算距離就開槍。沒有武器時只打得到相鄰的人。</li>
+        <li>回合結束忘記棄牌。手牌上限等於「目前」生命值，受傷後上限會變小。</li>
+        <li>對警長放監獄。警長不能被關。</li>
+        <li>叛徒太早殺警長。警長一死，只要還有歹徒活著就是歹徒贏。</li>
+      </ul>
+    </div>
+
+    <h2 id="cheatsheet">速查表</h2>
+    <div class="cheat">
+      <ul>
+        <li><strong>怎麼贏：</strong>警長與副警長清光壞人；歹徒殺警長；叛徒活到最後。</li>
+        <li><strong>我的回合：</strong>抽 2 張 → 出牌（BANG! 限 1 張）→ 手牌棄到等於生命值。</li>
+        <li><strong>能打誰：</strong>距離不超過武器射程的人，沒武器是 1。</li>
+        <li><strong>被開槍：</strong>打閃躲，或靠酒桶翻到紅心。</li>
+        <li><strong>快死了：</strong>即將失去最後一點生命時可以立刻喝啤酒。</li>
+        <li><strong>賞罰：</strong>殺歹徒抽 3 張；警長誤殺副警長棄光所有牌。</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    規則為個人整理的教學筆記，僅供朋友間遊玩參考；完整規則請以官方說明書為準。
+  </footer>
+</body>
+</html>
